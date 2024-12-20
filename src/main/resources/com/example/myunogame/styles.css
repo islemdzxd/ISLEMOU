@@ -1,0 +1,24 @@
+/* styles.css */
+.main-container {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour lisibilité */
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+.welcome-text, .choose-players-label, .current-player-label {
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.start-button, .player-button, .back-button, .next-button {
+    -fx-background-color: #FFAF00;
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-background-radius: 15;
+    -fx-padding: 10 20;
+}
+
+.start-button:hover, .player-button:hover, .back-button:hover, .next-button:hover {
+    -fx-background-color: #FF3D3D;
+}

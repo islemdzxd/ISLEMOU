@@ -20,7 +20,11 @@
             <!-- Page 1: Page d'accueil -->
             <VBox fx:id="welcomePage" alignment="CENTER" spacing="10.0" styleClass="welcome-page">
                 <Label fx:id="welcomeText" text="Bienvenue à UNO GAME!" styleClass="welcome-text"/>
-                <Button fx:id="startButton" text="Démarrer le Jeu" onAction="#onStartButtonClick" styleClass="start-button"/>
+                <Button fx:id="startButton" text="Démarrer le Jeu" onAction="#onStartButtonClick" styleClass="start-button" translateY="30"/>
+                <!-- Règles de Jeu button (now before Quitter) -->
+                <Button fx:id="rulesButton" text="Règles de Jeu" onAction="#onRulesButtonClick" styleClass="rules-button" translateY="90"/>
+                <!-- Quitter button (moved below Règles de Jeu) -->
+                <Button fx:id="exitButton" text="Quitter" onAction="#onExitButtonClick" styleClass="exit-button" translateY="150"/>
             </VBox>
 
             <!-- Page 2: Sélection des joueurs -->

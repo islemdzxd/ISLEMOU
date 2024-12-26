@@ -1,0 +1,72 @@
+/* General layout for the main container */
+.main-container {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/* Styling for the welcome text and labels */
+.welcome-text, .choose-players-label, .current-player-label {
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+/* Style for all buttons */
+.start-button, .player-button, .back-button, .next-button, .exit-button, .rules-button {
+    -fx-background-color: #FFAF00;
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-background-radius: 15;
+    -fx-padding: 10 20;
+}
+
+/* Hover style for all buttons */
+.start-button:hover, .player-button:hover, .back-button:hover, .next-button:hover, .exit-button:hover, .rules-button:hover {
+    -fx-background-color: #FF3D3D;
+}
+
+/* Additional style for cards */
+.carte {
+    -fx-background-color: rgba(255, 59, 48, 1);  /* Default color for a red card (can be overwritten by JavaFX logic) */
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 130px;
+    -fx-background-radius: 15;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+/* Hover effect for cards: make them grow slightly on hover */
+.carte:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0); /* Optional shadow effect */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Styling for the corner texts inside the circles */
+.carte-text-corner {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Styling for the circle corner elements */
+.carte-circle {
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+    -fx-radius: 15;
+}
+
+/* Optional: Style for the small circle corner with the text */
+.carte-circle-text {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
